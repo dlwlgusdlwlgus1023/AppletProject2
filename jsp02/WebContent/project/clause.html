@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  @media (max-width: 600px) {
+    .container {
+    padding: 80px 0px;
+    }
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 50%;
+    height: 50%;
+    opacity: 0.8;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    width: 100%; 
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  @media (max-width: 600px) {
+    #info {
+      display: none; 
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: blue !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  
+
+  </style>
+</head>
+<body>
+<div id="o1">숙박약관<br>
+(본 약관의 적용)<br><br></div>
+제1조<br><br>
+본 호텔이 숙박자와 체결하는 숙박 계약 및 이것에 관련한 계약은, 이 약관에 정해진 것을 따르며, 이 약관에 정해지지 않은 사항에 대해서는 법령 또는 일반에 확립된 관습을 기초로 합니다.
+본 호텔은 전항의 규정에도 불구하고 이 약관의 취지, 법령 및 관습에 반하지 않는 범위 내에서 특약에 응할 수 있습니다.
+（숙박계약체결의 거절）<br>
+제 2조<br><br>
+본 호텔은 다음의 경우 숙박계약체결를 거절할 수 있습니다.
+
+숙박 신청이 이 약관에 따르지 않은 것일 때
+만실(원)로 인해 객실의 여유가 없을 때
+숙박하고자 하는 이가 숙박에 관해, 법령의 규정 또는 공공의 질서，　눈에　띄게　선량의　풍속에　반하는　행위를　할　위험이　있다고　인정될　때．
+숙박하고자 하는 이가 ‘폭력단원에 의한 부당한 행위 방지 등에 관한 법률’에 의한 지정폭력단 및 지정폭력단연합 및 그의 지정폭력단원 또는 그 관계자, 그 외 반 사회적 세력에 관한 자(이하, ‘반사회세력’ 이라 한다)라고 인정될 때.
+숙박하려고 하는 자가 반사회세력이 사업활동을 지배하는 법인 및 기타 단체 등에 속할 때
+숙박하려고 하는 자가 법인및 기타 단체로써 그 간부 및 이사 중 반사회세력에 해당하는 자가 있을 때.
+숙박하려고 하는 자가 전염병자라고 확실히 인정되었을 때.
+숙박에 관해 합리적인 범위를 뛰어넘는 부담을 요구당했을 때.
+천재지변, 시설의 고장, 그 외 피치 못할 이유로 숙박을 허가하는 것이 불가능할 때.
+숙박하려는 자가 다른 숙박자들에게 눈에 띄게 피해를 끼칠 위험이 있다고 인정되었을 때.
+숙박하려고 하는 자가 다른 숙박자에게 눈에 띄게 피해를 끼치는 언동을 했을 때
+숙박하려고 하는 자가 본 호텔의 간부 혹은 종업원 등의 업무수행에 관해 지장을 주는 언동을 했을 때.
+숙박하려는 하는 자가 위험물(스토브 등의 화기, 석유류) 및 법률상 소지 및 사용을 금지하는 약물 혹은 인체에 유해한 물품을 소지했을 가능성이 있다고 인정되었을 때.
+숙박하려는 하는 자가 과거에 제 6조제1항제1호, 4호, 혹은 5호의 적용을 받은 자일 경우.
+그 외, 정당한 이유가 있을 때.
+(성명 등의 제출)<br>
+제 3조<br><br>
+본 호텔에 숙박계약을 신청하는 자는 다음 사항을 본 호텔에 제출합니다.
+숙박자의 주소, 성명, 전화번호
+숙박일, 도착 예정시각, 신청자의 전화번호 및 성명
+그 외, 본 호텔이 필요하다고 인정하는 사항
+숙박자가 숙박 중에 전항 제 2호의 숙박일을 초과해 숙박을 지속하고자 신청할 경우, 본 호텔은 그 신청을 받은 시점에 새로운 숙박 계약 신청을 받은 것으로 처리합니다.
+(숙박계약의 성립 등)<br>
+제4조<br><br>
+숙박계약은 본 호텔이 전조의 신청을 승낙했을 때 성립되는것으로 합니다.
+본 호텔은 숙박계약이 성립된 시에, 기한을 설정해 숙박기간(숙박기간이 3일 이상인 경우에는 3일분)의 숙박요금을 한도로 한 예약금의 지급을 요청할 수 있고 이 경우에는 본 호텔이 설정한 기한전에 예약금을 지불해야 합니다.
+전항의 예약금은 제 5조에 정해진 경우에 해당할 때에는, 동조의 위약금으로 충당하며 잔액이 있는 경우 반환합니다.
+(숙박자에 의한 숙박계약의 해제)<br>
+제 5조<br><br>
+본 호텔은 숙박 계약 신청자가, 숙박계약의 전부 또는 일부를 해제했을 때에는 별표 1에 게재된 내용에 따라 위약금을 청구할 수 있습니다.
+본 호텔은 숙박자가 사전 연락 없이 숙박일의 심야 0시(사전에 도착예정시각이 명시되였을 경우,이 시각으로부터 2시간후 )가 되어도 도착하지 않았을 때, 그 숙박 계약은 신청자가 해제한 것으로 간주하고 처리할 수 있습니다.
+전항의 경우에 있어, 숙박자가 사전 연락 없이 숙박일의 심야 0시(사전에 도착예정시각이 명시되였을 경우,이 시각으로부터 2시간후 )가 되어도 도착하지 않았던 것이 열차, 항공기 및 기타 공공의 교통기관의 연착 또는 지연, 그 외 숙박자의 책임이라 볼 수 없는 이유로 인한 것이 증명되었을 경우에는, 제 1항의 위약금은 요구하지 않습니다.
+(본 호텔에 의한 계약의 해제)<br>
+제 6조<br><br>
+본 호텔은 다음 경우에는 숙박 계약을 해제할 수 있습니다.
+제 2조 제 3호부터 제 15호까지에 해당될 때
+제 3조 제 1항 각호 규정의 각 사항을 제출 받지 못했을 때.
+제 4조 예약금의 지불을 청구했을 경우에 있어서, 기한까지 그 지불이 없었을 때.
+숙박자의외의 자을 실내에 진입시켰을 때.
+침대위에서의 흡연, 소방용설비 등에 대한 장난, 기타 본 호텔이 정한 사용규칙의 금지사항을 준수하지 않았을 때.
+본 호텔은 전항 규정에 의해 숙박 계약을 해제했을 경우에는 이미 받아들인 예약금이 있으면 그 예약금에서 숙박계약해제까지의 숙박요금을 공제한후에 반환합니다.
+(숙박의 등록)<br>
+제 7조<br><br>
+숙박자는 숙박일 당일 본 호텔의 프론트에서 다음 사항을 본 호텔에 등록해 주시기 바랍니다.
+
+제 3조 제1항 제 1호의 사항
+외국인일 경우에는 국적,여권번호,입국지 및 입국일 (여권의 복사본을 제출바랍니다.(단, 일본 국내에 주소를 가지는 경우에는 이 경우에 해당되지 않는다.)
+출발일
+그 외, 본 호텔이 필요하다고 인정한 사항.
+(체크인, 체크아웃 타임)<br>
+제 8조<br><br>
+숙박자가 본 호텔에 입관하시는 시각(체크인 타임)은 오후 3시부터로 시작하며, 또한 본 호텔로부터 퇴관하시는 시각(체크아웃 타임)은 오전 10시입니다.
+본 호텔은 원칙적으로 오전 10시 이후로 퇴관 시간을 연장하지 않습니다.
+2일 이상 연박한 숙박자는 오전 10시부터 오후 3시까지 객실 청소 시간이므로 해당 시간대에는 객실 및 객실 플로어 출입이 불가능합니다.
+단, 본 호텔이 청소가 불필요하다고 판단한 숙박자의 요구를 전달받았을 때 숙박자는 객실에서 체류할수 있습니다. 또한 귀중품은 본인이 지참하며, 그 분실이나 훼손 등에 관해선 본 호텔은 책임 부담을 가지지 않습니다.
+출발일의 오전 10시를 넘어서도 본 호텔에 체류 할 경우에는, 숙박요금의 100%를 받게 됩니다. (연장이나 연박을 희망하는 숙박자는, 체크아웃 시각까지 프론트로 오셔서 본 호텔이 승낙한 경우 연장이나 연박이 가능해지며, 그 경우의 연장요금 혹은 연박 숙박요금을 본 호텔이 승인한 시점에 지불하시게 됩니다.)
+제 1항부터 전 항까지의 내용에도 불구하고, 본 호텔이 승인한 경우에는 체크인타임 및/ 또는 체크아웃 타임이 변경되는 경우가 있습니다.
+(요금의 지불)<br>
+제 9조<br><br>
+숙박요금의 지불은 숙박자가 체크인 할 때 본 호텔 프론트에서 지불해 주십시오.
+숙박자가 객실의 사용을 개시한 후 임의로 숙박하지 않았던 경우에 있어서도 숙박요금의 반환은 불가합니다.
+(이용규칙의 준수)<br>
+제 10조<br><br>
+숙박자는, 본 호텔 내에 있어서는 본 호텔이 정한 이용규정에 따라야 합니다.
+
+(본 호텔의 책임)<br>
+제 11조<br><br>
+본 호텔의 숙박계약에 기초한 책임은 숙박자가 본 호텔의 프론트에서 숙박 등록을 실시할 때, 또는 객실에 들어갔을 때 둘 중 빠른 쪽을 시작으로, 숙박자가 출발하기 위해 객실에서 퇴실한 때를 지점으로 끝납니다
+본 호텔이 책임을 져야 할 이유로 인해 숙박자에게 객실이 제공되지 않았을 경우에는 천재지변, 그 외 이유로 인한 다른 숙박 시설을 제공하는 것이 곤란한 경우를 제외하고 그 숙박자에게 동일 또는 비슷한 조건의 다른 숙박시설을 알선합니다. 이 경우에는 객실의 제공이 불가능한 날의 알선처의 숙박시설 1박 숙박요금이 본 호텔 예약 시점을 기준으로 한 1박 요금보다 비싼 경우에 한해 차액을 본 호텔이 지불합니다.
+(기탁물 등의 취급)<br>
+
+제 12조<br><br>
+본 약관에 관해 발생하는 일절의 분쟁은 본 호텔의 본사 소재지를 관할하는 일본 재판소에서, 일본 법령에 따라 해결하게 됩니다.
+</body>
+</html>
